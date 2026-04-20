@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Judge Murwin — Portfolio</title>
+  <meta name="description" content="Information Security Analyst specializing in penetration testing, network defense, and digital forensics. Based in Philadelphia, PA." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Judge<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="cybersecurity.html">Cybersecurity</a></li>
+      <li><a href="gamedesign.html">Game Design</a></li>
+      <li><a href="homelab.html">Homelab</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="cybersecurity.html">Cybersecurity</a></li>
+    <li><a href="gamedesign.html">Game Design</a></li>
+    <li><a href="homelab.html">Homelab</a></li>
+  </ul>
+</div>
+
+<!-- ── Hero ──────────────────────────────── -->
+<section class="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-fade"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Welcome to my portfolio</div>
+    <h1 class="hero-name">Judge Murwin</h1>
+    <div class="hero-role">
+      <span class="typewriter"></span><span class="cursor"></span>
+    </div>
+    <p class="hero-desc">
+      Passionate about securing systems and protecting people.
+      Based in Philadelphia, PA.
+    </p>
+    <div class="hero-actions">
+      <a href="cybersecurity.html" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-scroll">scroll</div>
+</section>
+
+<!-- ── About ─────────────────────────────── -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Text column -->
+      <div class="about-text" data-reveal>
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Securing Systems,<br>Protecting People</h2>
+        <p>
+          I'm an Information Security Analyst with a strong foundation in penetration testing,
+          network defense, vulnerability assessment, and digital forensics. I hold a degree in
+          Information Science with a Cybersecurity concentration from the University of Pittsburgh.
+        </p>
+        <p>
+          My work spans both offensive and defensive security — from exploiting vulnerabilities
+          in controlled lab environments to configuring and hardening enterprise networks. I'm
+          currently transitioning into Healthcare IT, bringing my security expertise to an
+          industry where protecting sensitive patient data is mission-critical.
+        </p>
+        <p>
+          Outside of cybersecurity, I pursue game design as a creative outlet, blending technical
+          problem-solving with design thinking.
+        </p>
+
+        <div class="highlight-grid">
+          <div class="highlight-card" data-reveal data-d="1">
+            <div class="hl-icon">&#x1F393;</div>
+            <h4>Education</h4>
+            <p>University of Pittsburgh<br>Info Science / Cybersecurity</p>
+          </div>
+          <div class="highlight-card" data-reveal data-d="2">
+            <div class="hl-icon">&#x1F4CD;</div>
+            <h4>Location</h4>
+            <p>Philadelphia, PA</p>
+          </div>
+          <div class="highlight-card" data-reveal data-d="3">
+            <div class="hl-icon">&#x1F3E5;</div>
+            <h4>Industry Focus</h4>
+            <p>Healthcare IT &amp;<br>Information Security</p>
+          </div>
+          <div class="highlight-card" data-reveal data-d="4">
+            <div class="hl-icon">&#x1F6E1;</div>
+            <h4>Specialization</h4>
+            <p>Penetration Testing &amp;<br>Network Defense</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="about-sidebar" data-reveal data-d="2">
+        <div class="info-card">
+          <div class="info-card-label">Quick Info</div>
+          <ul class="info-list">
+            <li><span class="info-dot"></span>Information Security Analyst</li>
+            <li><span class="info-dot"></span>University of Pittsburgh</li>
+            <li><span class="info-dot"></span>Philadelphia, PA</li>
+            <li><span class="info-dot"></span>Open to Healthcare IT roles</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <div class="info-card-label">Connect</div>
+          <div class="social-row">
+            <a href="https://www.linkedin.com/in/judge-murwin/" target="_blank" rel="noopener" class="social-chip">LinkedIn</a>
+            <a href="https://github.com/Judge-Murwin" target="_blank" rel="noopener" class="social-chip">GitHub</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-label">Explore Projects</div>
+          <ul class="info-list">
+            <li><span class="info-dot"></span><a href="cybersecurity.html">Cybersecurity</a></li>
+            <li><span class="info-dot"></span><a href="gamedesign.html">Game Design</a></li>
+            <li><span class="info-dot"></span><a href="homelab.html">Homelab</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Skills ────────────────────────────── -->
+<section class="section section-bg" id="skills">
+  <div class="container">
+    <span class="section-label" data-reveal>Technical Skills</span>
+    <h2 class="section-title" data-reveal>Tools &amp; Technologies</h2>
+    <p class="section-sub" data-reveal>A broad toolkit across offensive security, network engineering, digital forensics, and healthcare IT.</p>
+    <div class="skills-grid">
+
+      <div class="skill-card" data-reveal data-d="1">
+        <div class="skill-card-header">
+          <div class="skill-icon">PT</div>
+          <h4>Penetration Testing</h4>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Nmap</span>
+          <span class="skill-tag">Nessus</span>
+          <span class="skill-tag">Metasploit</span>
+          <span class="skill-tag">Burp Suite</span>
+          <span class="skill-tag">Python</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal data-d="2">
+        <div class="skill-card-header">
+          <div class="skill-icon">NS</div>
+          <h4>Network Security</h4>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Cisco IOS</span>
+          <span class="skill-tag">VLANs</span>
+          <span class="skill-tag">OSPF</span>
+          <span class="skill-tag">BGP</span>
+          <span class="skill-tag">DHCP/NAT</span>
+          <span class="skill-tag">Snort IDS</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal data-d="3">
+        <div class="skill-card-header">
+          <div class="skill-icon">DF</div>
+          <h4>Digital Forensics</h4>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">FTK Imager</span>
+          <span class="skill-tag">Autopsy</span>
+          <span class="skill-tag">Wireshark</span>
+          <span class="skill-tag">Volatility</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal data-d="4">
+        <div class="skill-card-header">
+          <div class="skill-icon">SY</div>
+          <h4>Systems &amp; AD</h4>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Windows Server</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Active Directory</span>
+          <span class="skill-tag">Impacket</span>
+          <span class="skill-tag">PowerShell</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal data-d="5">
+        <div class="skill-card-header">
+          <div class="skill-icon">WL</div>
+          <h4>Wireless Security</h4>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Aircrack-ng</span>
+          <span class="skill-tag">Airodump-ng</span>
+          <span class="skill-tag">WEP/WPA2</span>
+          <span class="skill-tag">Kali Linux</span>
+        </div>
+      </div>
+
+      <div class="skill-card" data-reveal data-d="5">
+        <div class="skill-card-header">
+          <div class="skill-icon">HI</div>
+          <h4>Healthcare IT</h4>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">HIPAA</span>
+          <span class="skill-tag">HL7/FHIR</span>
+          <span class="skill-tag">EHR Security</span>
+          <span class="skill-tag">Risk Assessment</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ───────────────────────────── -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-intro" data-reveal>
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p>Whether you're looking for a cybersecurity or healthcare IT professional, have a project in mind, or just want to connect — I'd love to hear from you.</p>
+        <div class="contact-items">
+          <a href="mailto:j.murwin7@gmail.com" class="contact-item">
+            <div class="contact-item-icon">@</div>
+            j.murwin7@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/judge-murwin/" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon">in</div>
+            linkedin.com/in/judge-murwin
+          </a>
+          <a href="https://github.com/Judge-Murwin" target="_blank" rel="noopener" class="contact-item">
+            <div class="contact-item-icon">gh</div>
+            github.com/Judge-Murwin
+          </a>
+        </div>
+      </div>
+
+      <div data-reveal data-d="2">
+        <span class="section-label">Browse Work</span>
+        <h2 class="section-title" style="font-size:clamp(1.4rem,3vw,2rem)">Project Sections</h2>
+        <p style="margin-bottom:1.5rem">Explore my work across cybersecurity, game design, and homelab infrastructure.</p>
+        <div class="contact-items">
+          <a href="cybersecurity.html" class="contact-item">
+            <div class="contact-item-icon">CS</div>
+            Cybersecurity Projects
+          </a>
+          <a href="gamedesign.html" class="contact-item">
+            <div class="contact-item-icon">GD</div>
+            Game Design Projects
+          </a>
+          <a href="homelab.html" class="contact-item">
+            <div class="contact-item-icon">HL</div>
+            Homelab Projects
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2025 Judge Murwin</span>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="cybersecurity.html">Cybersecurity</a>
+        <a href="gamedesign.html">Game Design</a>
+        <a href="homelab.html">Homelab</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Terminal Easter Egg ───────────────── -->
+<div class="terminal-trigger">
+  <button class="terminal-btn" aria-label="Open terminal">&gt;_</button>
+  <div class="terminal-window">
+    <div class="terminal-bar">
+      <div class="t-dot r"></div>
+      <div class="t-dot y"></div>
+      <div class="t-dot g"></div>
+      <span class="terminal-bar-title">judge@portfolio ~ </span>
+    </div>
+    <div class="terminal-body">
+      <div class="t-out"></div>
+      <div class="t-input-row">
+        <span class="t-prompt">~/judge $&nbsp;</span>
+        <input class="t-input" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal input" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

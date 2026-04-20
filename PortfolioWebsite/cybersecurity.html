@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cybersecurity Projects — Judge Murwin</title>
+  <meta name="description" content="Penetration testing, wireless security, Active Directory exploitation, and digital forensics projects by Judge Murwin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ────────────────────────── -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Judge<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cybersecurity.html" class="active">Cybersecurity</a></li>
+      <li><a href="gamedesign.html">Game Design</a></li>
+      <li><a href="homelab.html">Homelab</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="cybersecurity.html" class="active">Cybersecurity</a></li>
+    <li><a href="gamedesign.html">Game Design</a></li>
+    <li><a href="homelab.html">Homelab</a></li>
+  </ul>
+</div>
+
+<!-- ── Page Hero ─────────────────────────── -->
+<section class="page-hero">
+  <div class="container">
+    <div class="section-label" data-reveal>Portfolio</div>
+    <h1 data-reveal data-d="1">Cybersecurity<br>Projects</h1>
+    <p data-reveal data-d="2">
+      Hands-on penetration testing, network exploitation, Active Directory attacks, and
+      digital forensics — demonstrating real-world offensive and defensive security techniques.
+    </p>
+  </div>
+</section>
+
+<!-- ── Projects Grid ─────────────────────── -->
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <div class="projects-grid">
+
+      <!-- Card 1: MS08-067 -->
+      <div class="project-card" data-modal="ms08067" data-reveal>
+        <div class="card-banner g1">
+          <div class="card-banner-text">nmap -sV -O 192.168.1.0/24 | grep "open" | tee scan.txt</div>
+          <div class="card-icon-wrap">0x67</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-red">Exploitation</span>
+            <span class="tag tag-orange">Windows</span>
+            <span class="tag tag-blue">Post-Exploitation</span>
+          </div>
+          <h3 class="card-title">Penetration Test: MS08-067 Exploit</h3>
+          <p class="card-desc">Scanned and exploited a vulnerable Windows XP machine using the MS08-067 vulnerability. Established a Meterpreter shell and demonstrated real-world post-exploitation access.</p>
+          <div class="card-footer">
+            <div class="card-tools">
+              <span class="tool-tag">Nmap</span>
+              <span class="tool-tag">Nessus</span>
+              <span class="tool-tag">Metasploit</span>
+            </div>
+            <span class="card-arrow">&#8594;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Wireless -->
+      <div class="project-card" data-modal="wireless" data-reveal data-d="1">
+        <div class="card-banner g4">
+          <div class="card-banner-text">airodump-ng --bssid AA:BB:CC:DD:EE:FF -c 6 -w capture wlan0mon</div>
+          <div class="card-icon-wrap">WiFi</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-teal">Wireless</span>
+            <span class="tag tag-red">Exploitation</span>
+            <span class="tag tag-blue">Reconnaissance</span>
+          </div>
+          <h3 class="card-title">Wireless Network Exploitation</h3>
+          <p class="card-desc">Captured WPA2 handshakes and cracked WEP/WPA2 credentials across multiple access points using airodump-ng and aircrack-ng with targeted wordlist attacks.</p>
+          <div class="card-footer">
+            <div class="card-tools">
+              <span class="tool-tag">Aircrack-ng</span>
+              <span class="tool-tag">Wireshark</span>
+              <span class="tool-tag">Kali Linux</span>
+            </div>
+            <span class="card-arrow">&#8594;</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: ZeroLogon -->
+      <div class="project-card" data-modal="zerologon" data-reveal data-d="2">
+        <div class="card-banner g2">
+          <div class="card-banner-text">python3 zerologon.py DC01 192.168.1.10 && secretsdump.py -no-pass -just-dc DOMAIN/DC01$@192.168.1.10</div>
+          <div class="card-icon-wrap">CVE</div>
+        </div>
+        <div class="card-body">
+          <div class="card-tags">
+            <span class="tag tag-purple">Active Directory</span>
+            <span class="tag tag-red">Privilege Escalation</span>
+            <span class="tag tag-orange">CVE-2020-1472</span>
+          </div>
+          <h3 class="card-title">Exploiting ZeroLogon for Domain Admin</h3>
+          <p class="card-desc">Exploited CVE-2020-1472 to reset a domain controller's machine account password, extract NTLM hashes with Impacket, and achieve full domain compromise.</p>
+          <div class="card-footer">
+            <div class="card-tools">
+              <span class="tool-tag">Python</span>
+              <span class="tool-tag">Impacket</span>
+              <span class="tool-tag">WMIPExec</span>
+            </div>
+            <span class="card-arrow">&#8594;</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Modal ─────────────────────────────── -->
+<div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Project details">
+  <div class="modal">
+    <div class="modal-banner g1">
+      <div class="modal-banner-text"></div>
+      <div class="modal-icon"></div>
+      <button class="modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-tags"></div>
+      <h2 class="modal-title"></h2>
+      <p class="modal-desc"></p>
+      <div class="modal-section">
+        <div class="modal-section-label">Tools &amp; Technologies</div>
+        <div class="modal-tools"></div>
+      </div>
+      <div class="modal-section">
+        <div class="modal-section-label">Key Highlights</div>
+        <ul class="modal-highlights"></ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class="btn btn-outline modal-github-link" target="_blank" rel="noopener">View on GitHub</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── Footer ────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2025 Judge Murwin</span>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="cybersecurity.html">Cybersecurity</a>
+        <a href="gamedesign.html">Game Design</a>
+        <a href="homelab.html">Homelab</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Terminal Easter Egg ───────────────── -->
+<div class="terminal-trigger">
+  <button class="terminal-btn" aria-label="Open terminal">&gt;_</button>
+  <div class="terminal-window">
+    <div class="terminal-bar">
+      <div class="t-dot r"></div>
+      <div class="t-dot y"></div>
+      <div class="t-dot g"></div>
+      <span class="terminal-bar-title">judge@portfolio ~ </span>
+    </div>
+    <div class="terminal-body">
+      <div class="t-out"></div>
+      <div class="t-input-row">
+        <span class="t-prompt">~/judge $&nbsp;</span>
+        <input class="t-input" type="text" autocomplete="off" spellcheck="false" aria-label="Terminal input" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Project Data ───────────────────────── -->
+<script>
+const projectData = {
+  ms08067: {
+    abbr: '0x67',
+    grad: 'g1',
+    bannerText: 'nmap -sV -O 192.168.1.0/24 | grep open | tee scan.txt && msfconsole -x "use exploit/windows/smb/ms08_067_netapi"',
+    title: 'Penetration Test: Scanning, Exploitation, and Post-Exploitation of a Windows XP Host',
+    tags: [
+      { label: 'Exploitation',     color: 'red'    },
+      { label: 'Windows',          color: 'orange' },
+      { label: 'Post-Exploitation',color: 'blue'   },
+    ],
+    description: 'Used Nmap and Nessus to identify a vulnerable Windows XP machine, then exploited the MS08-067 vulnerability with Metasploit. Gained access via a Meterpreter shell, explored the file system, and retrieved documents to demonstrate real-world post-exploitation impact.',
+    tools: ['Nmap', 'Nessus', 'Metasploit', 'Meterpreter', 'Kali Linux'],
+    highlights: [
+      'Conducted network reconnaissance with Nmap to map open ports and running services',
+      'Ran a Nessus vulnerability scan confirming MS08-067 (Server Service vulnerability) on the target',
+      'Exploited the target using Metasploit\'s ms08_067_netapi module to gain a Meterpreter shell',
+      'Navigated the compromised file system and retrieved sensitive documents',
+      'Documented the full attack chain from discovery to data exfiltration',
+    ],
+    github: 'https://github.com/Judge-Murwin/PenetrationTesting-MS08-067-Exploit',
+  },
+  wireless: {
+    abbr: 'WiFi',
+    grad: 'g4',
+    bannerText: 'airodump-ng --bssid AA:BB:CC:DD:EE:FF -c 6 -w capture wlan0mon && aircrack-ng -w rockyou.txt capture-01.cap',
+    title: 'Wireless Network Exploitation',
+    tags: [
+      { label: 'Wireless Security', color: 'teal'   },
+      { label: 'Exploitation',      color: 'red'    },
+      { label: 'Reconnaissance',    color: 'blue'   },
+    ],
+    description: 'Captured and cracked Wi-Fi credentials from multiple access points using airodump-ng and aircrack-ng. Targeted both WEP and WPA2 networks, collected handshakes via deauthentication attacks, and used wordlists to reveal passwords. Leveraged Wireshark for packet analysis and vendor identification.',
+    tools: ['Aircrack-ng', 'Airodump-ng', 'Aireplay-ng', 'Wireshark', 'Kali Linux'],
+    highlights: [
+      'Enabled monitor mode on a wireless adapter for passive traffic capture',
+      'Used airodump-ng to enumerate nearby access points, channels, and connected clients',
+      'Performed targeted deauthentication attacks to force WPA2 4-way handshake capture',
+      'Cracked WEP encryption using statistical IV attacks with aircrack-ng',
+      'Cracked WPA2 PSK credentials using dictionary attacks against captured handshakes',
+      'Analyzed captured packets in Wireshark to identify vendor OUIs and network activity',
+    ],
+    github: 'https://github.com/Judge-Murwin/Wireless-Network-Exploitation',
+  },
+  zerologon: {
+    abbr: 'CVE',
+    grad: 'g2',
+    bannerText: 'python3 zerologon.py DC01 192.168.1.10 && secretsdump.py -no-pass -just-dc DOMAIN/DC01$@192.168.1.10',
+    title: 'Exploiting ZeroLogon to Gain Domain Admin Access',
+    tags: [
+      { label: 'Active Directory',   color: 'purple' },
+      { label: 'Privilege Escalation',color: 'red'   },
+      { label: 'CVE-2020-1472',      color: 'orange' },
+    ],
+    description: 'Used the ZeroLogon vulnerability (CVE-2020-1472) to exploit a misconfigured domain controller and escalate to Domain Admin. Reset the machine account password via a custom Python script, extracted NTLM hashes with Impacket, and established remote execution via WMIPExec.',
+    tools: ['Nmap', 'Python', 'Impacket', 'secretsdump.py', 'WMIPExec', 'Kali Linux'],
+    highlights: [
+      'Identified the Domain Controller IP and role via Nmap port and service scan',
+      'Exploited CVE-2020-1472 (ZeroLogon) by resetting the DC machine account password to empty',
+      'Used Impacket\'s secretsdump.py to dump all NTLM password hashes from the domain controller',
+      'Performed pass-the-hash to authenticate as Domain Administrator without knowing the plaintext password',
+      'Gained remote command execution via WMIPExec and retrieved the target flag',
+      'Documented the complete domain compromise path from unauthenticated network access',
+    ],
+    github: 'https://github.com/Judge-Murwin/ZeroLogonExploit',
+  },
+};
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
